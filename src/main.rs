@@ -83,5 +83,5 @@ impl Handler for Server {
 
 fn main() {
     // Listen on an address and call the closure for each connection
-    listen("127.0.0.1:8000", |out| Server { out }).unwrap()
+    listen("0.0.0.0:80", |out| Server { out }).unwrap()
 }
