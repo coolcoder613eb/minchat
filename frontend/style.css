@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#message-container {
+    margin-bottom: 20px;
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.message.sent {
+    background-color: #dcf8c6; /* Light green for sent messages */
+    text-align: right;
+    margin-left: 10%;
+}
+
+.message.received {
+    background-color: #eaeaea; /* Light gray for received messages */
+    margin-right: 10%;
+}
+
+.message.system {
+    background-color: #ffe798; /* Yellow for system messages */
+    text-align: center;
+}
+
+.user.name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#message-input {
+    width: 82%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#send-button {
+    width: 14.2%;
+    padding: 1.5% 4%;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Default blue color for button */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+#send-button:focus {
+    outline: none;
+}
