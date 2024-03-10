@@ -63,9 +63,9 @@ impl Handler for Server {
         let message: MinMessage = serde_json::from_str(msg.as_text().expect("Invalid text!"))
             .expect("Failed to parse JSON!")/*FIXME*/;
         println!("{:#?}", message);
-        if message.username != "system" {
-            self.username = message.username;
-        }
+        /*if message.username != "system" {
+        self.username = message.username;
+        }*/
         // Broadcast to all connections
         self.out.broadcast(msg)
     }
