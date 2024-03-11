@@ -1,5 +1,18 @@
 var username;
 var socket;
+// Get the input field
+var input = document.getElementById("message-input");
+
+// Execute a function when the user presses a key on the keyboard
+input.addEventListener("keypress", function (event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("send-button").click();
+  }
+});
 // Function to handle joining the chat
 function joinChat() {
   // Prompt the user for their username
@@ -50,6 +63,7 @@ function joinChat() {
     }
     msg.appendChild(text);
     messages.appendChild(msg);
+    window.scrollTo(0, document.body.scrollHeight);
   };
 
   // Event handler for errors in the WebSocket connection
