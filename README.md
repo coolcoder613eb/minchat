@@ -9,3 +9,5 @@ cargo run --release
 ```
 
 Then navigate to localhost in your browser.
+## Screenshots
+<img width="838" alt="Screenshot 2024-03-17 at 8 47 15 PM" src="https://github.com/coolcoder613eb/minchat/assets/96163908/b83d459c-5b59-4900-bef9-75efb951446f">
