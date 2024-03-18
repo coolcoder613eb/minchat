@@ -17,6 +17,9 @@ input.addEventListener("keypress", function (event) {
 function joinChat() {
   // Prompt the user for their username
   username = prompt("Please enter your username:");
+  if (username == null) {
+    username = "Unknown";
+  }
 
   // Connect to the WebSocket server
   socket = new WebSocket("ws://" + window.location.host + "/ws");
